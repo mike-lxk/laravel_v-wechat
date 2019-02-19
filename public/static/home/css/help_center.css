@@ -1,0 +1,249 @@
+.help_center {
+    width: 100%;
+    min-width: 1200px;
+    background-color: #f5f6f6;
+    padding-top: 22px;
+    padding-bottom: 100px;
+}
+
+.help_center_l {
+    width: 230px;
+    min-height:492px;
+    background-color: #ffffff;
+}
+
+.help_center_l>li {
+    line-height: 60px;
+    font-size: 16px;
+    color: #4f4e4e;
+    border-bottom: 1px solid #eeeeee;
+    cursor: pointer;
+}
+
+.first_menu>span {
+    display: block;
+    margin-left: 24px;
+}
+
+.first_menu>i {
+    display: block;
+    background: url(../images/down.jpg) no-repeat;
+    width: 13px;
+    height: 7px;
+    margin-top: 27px;
+    margin-right: 24px;
+}
+
+.two_menu>li {
+    height: 49px;
+    line-height: 49px;
+    border-top: 1px solid #eeeeee;
+}
+
+.two_menu>li>a {
+    display: block;
+    font-size: 14px;
+    color: #808080;
+    margin-left: 32px;
+}
+.help_center_l>li>.first_menu.active  i{
+    background: url(../images/up.jpg) no-repeat;
+}
+.two_menu>li.active {
+    border-left:4px solid #18d091;
+}
+.two_menu>li.active  a{
+  color:#18d091;
+}
+.help_center_r{
+    width: 888px;
+    background-color: #fff;
+    margin-left: 22px;
+    padding:30px;
+}
+
+/* 关于我们 */
+.about_us{
+ width: 100%;
+ min-width: 1200px;
+ height: 315px;
+ background: url(../images/about_us.jpg) no-repeat  center;
+ background-size: cover;
+ padding-top: 62px;
+}
+.us_img{
+    width: 86px;
+    height: 86px;
+    margin:0 auto;
+    position: relative;
+   
+}
+.us_img>img{
+    animation: fadeOutIn 4.4s infinite;
+    -webkit-animation: fadeOutIn 4.4s infinite;
+}
+
+@keyframes fadeOutIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0.15;
+       
+    }
+
+     50%{
+        transform: scale(1);
+        opacity: 1;
+     }
+    100% {
+        transform: scale(0.8);
+        opacity: 0.15;
+       
+    }
+} 
+.us_img>span{
+    background: url(../images/house.png) no-repeat;
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+
+.company{
+    width: 100%;
+    min-width: 1200px;
+    padding-top: 74px;
+    text-align: center;
+   padding-bottom: 36px;
+}
+.company>h3{
+    font-size: 30px;
+    font-weight: normal;
+    color: #232323;
+}
+.company_title{
+    font-size: 12px;
+    color: #888888;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.one_text{
+    margin-bottom: 28px;
+}
+.company p{
+    line-height: 26px;
+    font-size: 15px;
+    color: #666666;
+}
+.teams{
+    margin-top: 50px;
+}
+.team_list{
+    width: 1044px;
+    margin:0 auto;
+    display: flex;
+}
+.team_item{
+    flex:1;
+    width: 150px;
+	height: 181px;
+    margin-right: 48px;
+    padding:24px  0  0   20px;
+    text-align: left;
+}
+.team_item:last-child{
+    margin-right: 0;
+}
+.team_item:nth-child(odd){
+    background-color: #18d091;
+}
+.team_item:nth-child(even){
+    background-color: #f2f2f2;
+}
+.team_item>h4{
+    font-size: 22px;
+	font-weight: normal;
+}
+.team_item>.english_item{
+    font-size: 12px;
+}
+.team_item:nth-child(odd)  h4{
+   color:#fff;
+}
+.team_item:nth-child(even) h4{
+    color: #151515;
+}
+.team_item:nth-child(odd)  .english_item{
+    color:#fff;
+ }
+.team_item:nth-child(even) .english_item{
+    color: #303030;
+}
+.team_item>p{
+    font-size: 12px;
+    margin-top: 25px;
+}
+.team_item:nth-child(odd)  p{
+    color:#fff;
+ }
+ .team_item:nth-child(even) p{
+    color: #253038;
+ }
+ .concat_us_wrap{
+     min-width: 1200px;
+     width: 100%;
+     background: #f6f6f6;
+     padding-top: 68px;
+     padding-bottom: 40px;
+ }
+ .concat_us_wrap{
+     text-align: center;
+ }
+ .concat_us_wrap>h3{
+    font-size: 30px;
+    font-weight: normal;
+    color: #232323;
+ }
+ .concat_list{
+     width: 1044px;
+     margin:0 auto;
+     display: flex;
+     margin-top: 50px;
+ }
+ .concat_item{
+     flex: 1;
+    width: 301px;
+	height: 355px;
+    background: url(../images/wm.png)  no-repeat;
+    margin-right: 70px;
+    position: relative;
+    z-index: 10;
+ }
+ .concat_item:last-child{
+     margin-right: 0;
+ }
+ .concat_item>img{
+     margin-top:18px;
+ }
+ .concat_item>h4{
+    font-size: 20px;
+    font-weight: normal;
+    color: #303030;
+    text-align: center;
+    margin-top: 52px;
+ }
+ .concat_item>p{
+    font-size: 16px;
+    color: #303030;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 26px;
+ }
+
+ .map{
+     display: block;
+     margin:55px  auto 0;
+     width: 1046px;
+	height: 395px;
+ }

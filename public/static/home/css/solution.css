@@ -1,0 +1,652 @@
+.banner_box {
+    min-width: 1200px;
+    position: relative;
+}
+
+.banner_box>a {
+    display: block;
+    width: 100%;
+    height: 456px;
+}
+
+.banner_box>a>img {
+    width: 100%;
+    height: 456px;
+}
+
+.electronic_solution {
+    width: 1199px;
+    height: 269px;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgba(2, 2, 2, 0.1);
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    top: 520px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+.electronic_solution>h2 {
+    font-size: 36px;
+    color: #363636;
+    font-weight: normal;
+    margin: 45px 0 30px;
+}
+
+.electronic_solution>p {
+    font-size: 16px;
+    line-height: 36px;
+    color: #898989;
+}
+
+/* 适用行业 */
+.industry_box {
+    min-width: 1200px;
+    height: 540px;
+    width: 100%;
+    background: #f5f6f6;
+    padding-top: 270px;
+}
+
+.industry_title {
+    text-align: center;
+}
+
+.industry_title>h3 {
+    font-size: 36px;
+    font-weight: normal;
+    color: #363636;
+    margin-bottom: 18px;
+}
+
+.industry_title>p {
+    font-size: 18px;
+    color: #939393;
+}
+
+.industry_list {
+    width: 1200px;
+    margin-top: 40px;
+}
+
+.industry_list>.industry_item {
+    width: 313px;
+    height: 115px;
+    background-color: #ffffff;
+    margin-right: 60px;
+    margin-bottom: 46px;
+    padding: 42px 0 0 47px;
+}
+
+.industry_list>.industry_item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.industry_item .industry_icon {
+    width: 72px;
+    height: 72px;
+    background: url(../images/syhy.png) no-repeat;
+    margin-right: 18px;
+}
+
+.industry_item .industry_icon1 {
+    background-position: -74px -74px;
+  }
+
+.industry_item .industry_icon2 {
+    background-position: -148px -74px;
+  }
+
+.industry_item .industry_icon3 {
+    background-position: -222px -74px;
+   }
+
+.industry_item .industry_icon4 {
+    background-position: -296px -74px;
+   }
+
+.industry_item .industry_icon5 {
+    background-position: -0px -148px;
+  }
+
+.industry_item .industry_icon6 {
+    background-position: -74px -148px;
+   }
+
+.industry_name {
+    line-height: 44px;
+    font-size: 24px;
+    color: #696969;
+}
+
+.industry_english {
+    font-size: 14px;
+    color: #b9b9b9;
+}
+
+.industry_list .industry_item1.active  {
+    background: url(../images/ds_03.jpg) no-repeat;
+}
+
+.industry_list .industry_item2.active  {
+    background: url(../images/ds_05.jpg) no-repeat;
+}
+.industry_list .industry_item3.active  {
+    background: url(../images/ds_07.jpg) no-repeat;
+}
+.industry_list .industry_item4.active  {
+    background: url(../images/ds_42.jpg) no-repeat;
+}
+.industry_list .industry_item5.active  {
+    background: url(../images/ds_43.jpg) no-repeat;
+}
+.industry_list .industry_item6.active  {
+    background: url(../images/ds_44.jpg) no-repeat;
+}
+
+.industry_list .industry_item.active .industry_icon1{
+    background-position: -0px -0px; 
+}
+.industry_list .industry_item.active .industry_icon2{
+    background-position: -74px -0px; 
+}
+.industry_list .industry_item.active .industry_icon3{
+    background-position: -148px -0px; 
+}
+.industry_list .industry_item.active .industry_icon4{
+    background-position: -222px -0px;
+}
+.industry_list .industry_item.active .industry_icon5{
+    background-position: -296px -0px;
+}
+.industry_list .industry_item.active .industry_icon6{
+    background-position: -0px -74px;
+}
+
+.industry_list .industry_item.active .industry_name{
+    color:#fff;
+}
+
+.industry_list .industry_item.active .industry_english{
+    color:#fff;
+}
+
+/* 核心功能 */
+.cores_wrap{
+    min-width: 1200px;
+    width: 100%;
+    background-color: #ffffff;
+    padding-top: 74px;
+}
+.cores_list{
+    margin:0 auto;
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 84px;
+}
+.cores_list .core_items{
+    display: block;
+    width: 20%;
+    text-align: center;
+    margin-bottom: 75px;
+}
+.core_items>img{
+    margin-bottom: 35px;
+    width: 49px;
+	height: 49px;
+}
+
+.core_items>p{
+    font-size: 18px;
+    color: #3f3f3f;
+}
+
+/* 全面的门店经营管理功能 */
+.store_wrap{
+    min-width: 1200px;
+ width: 100%;
+ background-color: #f5f6f6;
+ padding-top: 65px;
+}
+.store_img{
+    margin-top: 60px;
+}
+.store_img>img{
+    display: block;
+    margin:0 auto;
+}
+/* 超值套餐 */
+.set_meal{
+    width: 100%;
+    background-color: #ffffff;
+    min-width: 1200px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.set_meal_list{
+    margin-top: 96px;
+}
+.set_meal_list>.set_meal_item{
+    width: 379px;
+    min-height: 551px;
+	background-color: #ffffff;
+	box-shadow: 0px 1px 15px 0px 
+		rgba(2, 2, 2, 0.1);
+}
+.set_meal_name{
+    width: 380px;
+    height: 89px;
+    line-height: 89px;
+    text-align: center;
+    background-color: #f5f6f6;
+    font-size: 24px;
+    color: #242424;
+}
+.meal_list{
+    padding-top: 36px;
+    flex-direction: row;
+    padding-left: 30px;
+    overflow: hidden;
+    min-height: 300px;
+}
+.meal_item{
+    width: 33.33%;
+    height: 15px;
+    margin-bottom: 21px;
+    float:left;
+}
+.meal_item>i{
+    display: block;
+    background: url(../images/dh.png)  no-repeat;
+    width: 15px;
+    height: 15px;
+    margin-right: 9px;
+    margin-top: 2px;
+}
+.meal_item>.green_icon{
+    background: url(../images/green.png) no-repeat;
+}
+.meal_item>.blue_icon{
+    background: url(../images/blue_icon.png) no-repeat;
+}
+.meal_item>span{
+    display: block;
+    font-size: 14px;
+    color: #6e6e6e;
+    width: 70px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.set_meal_price{
+    text-align: center;
+    font-size: 24px;
+    color: #6db4ff;
+}
+.set_meal_price1{
+    color: #18d091;
+}
+.set_meal_price2{
+    color: #00c1de;
+}
+.immediately{
+    display: block;
+    width: 200px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+	border-radius: 5px;
+    border: solid 1px #6db4ff;
+    font-size: 18px;
+    color: #6db4ff;
+    margin:22px  auto  0;
+}
+.immediately1{
+    border: solid 1px #18d091;
+    color: #18d091;
+}
+.immediately2{
+    border: solid 1px #00c1de;
+    color: #00c1de;
+}
+.set_meal_list .set_meal_item.active{
+    width: 441px;
+    height: 594px;
+    position: relative;
+    top:-30px;
+}
+.set_meal_list .set_meal_item.active  .set_meal_name{
+    width: 441px;
+	height: 95px;
+    background-color: #6db4ff;
+    font-size: 30px;
+    color: #f5f6f6;
+}
+.set_meal_list .set_meal_item.active  .set_meal_name1{
+    background: #18d091;
+}
+.set_meal_list .set_meal_item.active  .set_meal_name2{
+	background-color: #00c1de;
+}
+
+.set_meal_list .set_meal_item.active  .meal_list{
+   min-height: 330px;
+}
+.set_meal_list .set_meal_item.active  .immediately{
+    background-color: #6db4ff;
+    font-size: 18px;
+    color:#fff;
+ }
+ .set_meal_list .set_meal_item.active  .immediately1{
+    background: #18d091;
+ }
+ .set_meal_list .set_meal_item.active  .immediately2{
+    background-color: #00c1de;
+ }
+ /* 开发流程 */
+ .process{
+   height: 317px;
+   width: 100%;
+   min-width: 1200px;
+   background: #f5f6f6;
+ }
+ .process>h3{
+    font-size: 36px;
+    font-weight: normal;
+    color: #363636;
+    text-align: center;
+    padding-top: 75px;
+ }
+ .process>img{
+     display: block;
+     margin:82px  auto 0;
+ }
+
+ /* 品牌展示解决方案 */
+ .industry_item .brand_icon {
+    width: 72px;
+    height: 72px;
+    background: url(../images/brand_icon.png) no-repeat;
+    margin-right: 18px;
+}
+
+.industry_item .brand_icon1 {
+    background-position: -74px -74px; 
+}
+.industry_item .brand_icon2 {
+    background-position: -148px -74px; 
+}
+.industry_item .brand_icon3 {
+    background-position: -222px -74px;
+}
+.industry_item .brand_icon4 {
+    background-position: -296px -74px;
+}
+.industry_item .brand_icon5 {
+    background-position: -0px -148px;
+}
+.industry_item .brand_icon6 {
+    background-position: -74px -148px; 
+}
+
+.industry_list .industry_item.active .brand_icon1{
+    background-position: -0px -0px;
+}
+.industry_list .industry_item.active .brand_icon2{
+    background-position: -74px -0px;
+}
+.industry_list .industry_item.active .brand_icon3{
+    background-position: -148px -0px;
+}
+.industry_list .industry_item.active .brand_icon4{
+    background-position: -222px -0px; 
+}
+.industry_list .industry_item.active .brand_icon5{
+    background-position: -296px -0px; 
+}
+.industry_list .industry_item.active .brand_icon6{
+    background-position: -0px -74px; 
+}
+
+.industry_list .brand_item1.active  {
+    background: url(../images/pinp_03.jpg) no-repeat;
+}
+
+.industry_list .brand_item2.active  {
+    background: url(../images/pinp_05.jpg) no-repeat;
+}
+.industry_list .brand_item3.active  {
+    background: url(../images/pinp_07.jpg) no-repeat;
+}
+.industry_list .brand_item4.active  {
+    background: url(../images/pinp_42.jpg) no-repeat;
+}
+.industry_list .brand_item5.active  {
+    background: url(../images/pinp_43.jpg) no-repeat;
+}
+.industry_list .brand_item6.active  {
+    background: url(../images/pinp_44.jpg) no-repeat;
+}
+.concat_way1{
+    background-color: #18d091;
+}
+.concat_us2{
+    box-shadow: 0px 5px 10px 0px 
+        rgba(24, 208, 145, 0.75);
+        color: #18d091;
+}
+.make1{
+    box-shadow: 0px 5px 10px 0px 
+		rgba(24, 208, 145, 0.75);
+}
+
+
+/* 微商解决方案 */
+.industry_item .weachat_icon {
+    width: 72px;
+    height: 72px;
+    background: url(../images/wechat_icon.png) no-repeat;
+    margin-right: 18px;
+}
+
+.industry_item .weachat_icon1 {
+    background-position: -74px -74px; 
+}
+.industry_item .weachat_icon2 {
+    background-position: -148px -74px; 
+}
+.industry_item .weachat_icon3 {
+    background-position: -222px -74px;
+}
+.industry_item .weachat_icon4 {
+    background-position: -296px -74px;
+}
+.industry_item .weachat_icon5 {
+    background-position: -0px -148px;
+}
+.industry_item .weachat_icon6 {
+    background-position: -74px -148px; 
+}
+
+.industry_list .industry_item.active .weachat_icon1{
+    background-position: -0px -0px;
+}
+.industry_list .industry_item.active .weachat_icon2{
+    background-position: -74px -0px;
+}
+.industry_list .industry_item.active .weachat_icon3{
+    background-position: -148px -0px;
+}
+.industry_list .industry_item.active .weachat_icon4{
+    background-position: -222px -0px; 
+}
+.industry_list .industry_item.active .weachat_icon5{
+    background-position: -296px -0px; 
+}
+.industry_list .industry_item.active .weachat_icon6{
+    background-position: -0px -74px; 
+}
+.industry_list .wechat_item1.active  {
+    background: url(../images/weis_03.png) no-repeat;
+}
+
+.industry_list .wechat_item2.active  {
+    background: url(../images/weis_05.png) no-repeat;
+}
+.industry_list .wechat_item3.active  {
+    background: url(../images/weis_07.png) no-repeat;
+}
+.industry_list .wechat_item4.active  {
+    background: url(../images/weis_42.png) no-repeat;
+}
+.industry_list .wechat_item5.active  {
+    background: url(../images/weis_43.png) no-repeat;
+}
+.industry_list .wechat_item6.active  {
+    background: url(../images/weis_44.png) no-repeat;
+}
+
+
+/* 新零售解决方案 */
+.industry_item .retail_icon {
+    width: 72px;
+    height: 72px;
+    background: url(../images/retail_icon.png) no-repeat;
+    margin-right: 18px;
+}
+.industry_item .retail_icon1 {
+    background-position: -74px -74px; 
+}
+.industry_item .retail_icon2 {
+    background-position: -148px -74px; 
+}
+.industry_item .retail_icon3 {
+    background-position: -222px -74px;
+}
+.industry_item .retail_icon4 {
+    background-position: -296px -74px;
+}
+.industry_item .retail_icon5 {
+    background-position: -0px -148px;
+}
+.industry_item .retail_icon6 {
+    background-position: -74px -148px; 
+}
+.industry_list .industry_item.active .retail_icon1{
+    background-position: -0px -0px;
+}
+.industry_list .industry_item.active .retail_icon2{
+    background-position: -74px -0px;
+}
+.industry_list .industry_item.active .retail_icon3{
+    background-position: -148px -0px;
+}
+.industry_list .industry_item.active .retail_icon4{
+    background-position: -222px -0px; 
+}
+.industry_list .industry_item.active .retail_icon5{
+    background-position: -296px -0px; 
+}
+.industry_list .industry_item.active .retail_icon6{
+    background-position: -0px -74px; 
+}
+.industry_list .retail_item1.active  {
+    background: url(../images/xinls_03.jpg) no-repeat;
+}
+
+.industry_list .retail_item2.active  {
+    background: url(../images/xinls_05.jpg) no-repeat;
+}
+.industry_list .retail_item3.active  {
+    background: url(../images/xinls_07.jpg) no-repeat;
+}
+.industry_list .retail_item4.active  {
+    background: url(../images/xinls_42.jpg) no-repeat;
+}
+.industry_list .retail_item5.active  {
+    background: url(../images/xinls_43.jpg) no-repeat;
+}
+.industry_list .retail_item6.active  {
+    background: url(../images/xinls_44.jpg) no-repeat;
+}
+
+.concat_way2{
+    background-color: #00c1de;
+}
+.concat_us3{
+    box-shadow: 0px 5px 10px 0px 
+    rgba(0, 193, 222, 0.75);
+    color: #00c1de;
+}
+.make2{
+    box-shadow: 0px 5px 10px 0px 
+    rgba(0, 193, 222, 0.75);
+}
+
+/* 制造业解决方案 */
+.industry_item .manufacture_icon {
+    width: 72px;
+    height: 72px;
+    background: url(../images/manufacture_icon.png) no-repeat;
+    margin-right: 18px;
+}
+
+.industry_item .manufacture_icon1 {
+    background-position: -74px -74px; 
+}
+.industry_item .manufacture_icon2 {
+    background-position: -148px -74px; 
+}
+.industry_item .manufacture_icon3 {
+    background-position: -222px -74px;
+}
+.industry_item .manufacture_icon4 {
+    background-position: -296px -74px;
+}
+.industry_item .manufacture_icon5 {
+    background-position: -0px -148px;
+}
+.industry_item .manufacture_icon6 {
+    background-position: -74px -148px; 
+}
+
+.industry_list .industry_item.active .manufacture_icon1{
+    background-position: -0px -0px;
+}
+.industry_list .industry_item.active .manufacture_icon2{
+    background-position: -74px -0px;
+}
+.industry_list .industry_item.active .manufacture_icon3{
+    background-position: -148px -0px;
+}
+.industry_list .industry_item.active .manufacture_icon4{
+    background-position: -222px -0px; 
+}
+.industry_list .industry_item.active .manufacture_icon5{
+    background-position: -296px -0px; 
+}
+.industry_list .industry_item.active .manufacture_icon6{
+    background-position: -0px -74px; 
+}
+
+.industry_list .manufacture_item1.active  {
+    background: url(../images/zhizy_03.png) no-repeat;
+}
+.industry_list .manufacture_item2.active  {
+    background: url(../images/zhizy_05.png) no-repeat;
+}
+.industry_list .manufacture_item3.active  {
+    background: url(../images/zhizy_07.png) no-repeat;
+}
+.industry_list .manufacture_item4.active  {
+    background: url(../images/zhizy_42.png) no-repeat;
+}
+.industry_list .manufacture_item5.active  {
+    background: url(../images/zhizy_43.png) no-repeat;
+}
+.industry_list .manufacture_item6.active  {
+    background: url(../images/zhizy_44.png) no-repeat;
+}

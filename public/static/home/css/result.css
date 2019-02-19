@@ -1,0 +1,92 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+textarea,
+p,
+blockquote,
+th,
+td,
+input,
+select,
+textarea,
+button {
+    margin: 0;
+    padding: 0
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none!important;
+    color: #9d9d9d;
+    font-size: 12px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+i{
+    font-style:normal;
+}
+.red{
+    color:red;
+}
+
+input{
+	outline: none;
+}
+button{
+	outline: none;
+}
+/*清除浮动--推荐使用*/  
+.clearfix:before,.clearfix:after{content: '';display: table;}  
+.clearfix:after{clear: both;} 
+
+img {
+    border: none;
+}
+
+.container{
+    position: relative;
+    height:100%;
+    margin:0 auto;
+    width: 1200px;
+}
+
+
+.hide{
+    display: none;
+}
+
+.show{
+    display:block;
+}
+
