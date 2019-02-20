@@ -104,7 +104,7 @@ $(".submit_psd").click(function(){
                 $('.codes_num').html("点击获取验证码");
                 $('.codes_num').css("background-color", '');
                 countdown = 90;
-
+                clearInterval(t);
                 layer.msg(res.msg, { icon: 2, time: 1500 });
                 return;
             } else {
@@ -121,6 +121,7 @@ $(".submit_psd").click(function(){
                             $('.codes_num').html("点击获取验证码");
                             $('.codes_num').css("background-color", '');
                             countdown = 90;
+                            clearInterval(t);
                             // 清空input框的数据
                             $('.tel2').val('');
                             $('.psd2').val('');

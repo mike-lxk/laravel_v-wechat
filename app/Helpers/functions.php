@@ -15,7 +15,7 @@ function show_msg($status, $message = '', $data = array())
         'msg' => $message,
         'data' => $data
     );
-    exit(json_encode($result));
+    return json_encode($result);
 }
 
 

@@ -22,7 +22,7 @@ Route::namespace('Home')->group(function () {
     // 登录、注册、忘记密码
     Route::match(['get', 'post'], 'login', 'LoginController@login');
     Route::match(['get', 'post'], 'register', 'LoginController@register');
-    Route::post('forgot', 'LoginController@forgetSubmit');
+    Route::post('forgot', 'LoginController@forgot');
 
     // 解决方案
     Route::get('solution/retail', 'SolutionController@retail');
@@ -32,13 +32,13 @@ Route::namespace('Home')->group(function () {
     Route::get('solution/wechat', 'SolutionController@wechat');
 
     // 代理
-    Route::resource('agency', 'AgencyController');
+    Route::resource('agency', 'AgencyController',['only'=>['index', 'store']]);
 
     // 帮助
-    Route::get('help/aboutus', 'HelpController@aboutus', ['only' => [
+    Route::get('help/aboutus', 'HelpController@aboutus');
+    Route::resource('help', 'HelpController', ['only' => [
         'index', 'show', 'aboutus'
     ]]);
-    Route::resource('help', 'HelpController');
     
     // 经典案例
     Route::resource('cases', 'CasesController');

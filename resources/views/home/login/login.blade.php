@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/static/home/css/result.css">
     <link rel="stylesheet" href="/static/home/css/user.css">
+    <link rel="icon" href="/static/home/images/header.ico">
     <title>登陆</title>
 </head>
 
@@ -63,6 +64,7 @@
         <div class="register_left   fl   psd_left">
             <h2>找回密码</h2>
             <form action="" class="forget-form">
+            {{csrf_field()}}
                 <ul class="userRegLoginform  ">
                     <li>
                         <input type="text" name="phone" placeholder="输入手机号"  class="tel2">

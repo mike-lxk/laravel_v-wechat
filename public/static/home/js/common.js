@@ -1,3 +1,10 @@
+// 手机验证机制
+var reg = /^1(3|4|5|7|8|9)\d{9}$/;
+
+// 密码验证机制
+var reg3 = /^[a-zA-Z0-9]{6,12}$/;
+
+
 // 登陆成功后展示下拉到会员中心的效果
 $(".user_succ").hover(function () {
     $(this).find(".logoin_member").stop().slideDown()
@@ -65,6 +72,19 @@ $(function () {
     })
 })
 
+/**
+ * input框的提示信息【蓝色】
+ * @param string name  提示信息
+ * @param string classname   类名
+ */
+function tips(name, classname) {
+    layer.tips(name, classname, {
+        tips: [2, '#4eb6ff'],
+        time: 1000
+    });
+}
+
+
 // 代理合作-合作优势
 $(".advantagefour_item").mouseover(function () {
     tabSwitch(this, "active", ".all_advantage")
@@ -80,10 +100,38 @@ function tabSwitch(obj, obj1, obj2) {
 
 // 代理合作提交表单
 $(".submit_btn").click(function () {
-    $(".submit_box").removeClass("hide");
-    setTimeout(function () {
-        $(".submit_box").addClass("hide");
-    }, 2000)
+    // $(".submit_box").removeClass("hide");
+    // setTimeout(function () {
+    //     $(".submit_box").addClass("hide");
+    // }, 2000)
+    if ($('.tips-show-name').val() == '') {
+        tips('请输入姓名','.tips-show-name');
+        return false;
+    }
+    if (!reg.test($('.tips-show-tel').val()))  {
+        tips('请输入正确的手机号码！', '.tips-show-tel');
+        return false;
+    }
+    if ($('.tips-show-company').val() == '') {
+        tips('请输入公司名称', '.tips-show-company');
+        return false;
+    }
+
+    // 提交表单信息
+    $.post('/agency', $("form").serialize(), function (result) {
+        if (result.code == 200) {
+            // 成功
+            $(".submit_box").removeClass("hide");
+            setTimeout(function () {
+               location.reload();
+            }, 2000)
+        } else {
+            layer.msg(result.msg, { icon: 2, time: 1500 });
+            return;
+        }
+    }, 'json');
+
+
 })
 
 // 帮助中心菜单栏切换
@@ -104,12 +152,6 @@ $(".help_active>div").click(function () {
 $(".two_menu>li").click(function () {
     $(this).addClass("active").siblings().removeClass("active");
 })
-
-// 手机验证机制
-var reg = /^1(3|4|5|7|8|9)\d{9}$/;
-
-// 密码验证机制
-var reg3 = /^[a-zA-Z0-9]{6,12}$/;
 
 // 验证码倒计时间
 var countdown = 90;

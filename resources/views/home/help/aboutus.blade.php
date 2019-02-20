@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/static/home/css/result.css">
     <link rel="stylesheet" href="/static/home/css/common.css">
     <link rel="stylesheet" href="/static/home/css/help_center.css">
+    <link rel="icon" href="/static/home/images/header.ico">
     <title>帮助中心</title>
 </head>
 

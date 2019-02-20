@@ -22,12 +22,12 @@ class LoginController extends Controller
             if ($status) {
                 if ($status == 1) {
                     session(['user' => $data['phone']]);
-                    show_msg(200, '登录成功');
+                    return show_msg(200, '登录成功');
                 } else {
-                    show_msg(201, '用户已被禁用');
+                    return show_msg(201, '用户已被禁用');
                 }
             } else {
-                show_msg(201, '登录失败');                
+                return show_msg(201, '登录失败');                
             }
         } else {
             return view('home.login.login');
@@ -41,7 +41,6 @@ class LoginController extends Controller
     public function register(Request $request)
     {
         if ($request->ajax()) {
-            // $data = $request->post();
             $res['create_time'] = date('Y-m-d H:i:s');
             $res['phone'] = $request->input('phone');
             $res['password'] = get_md5_sha1($request->input(['password']));
@@ -49,9 +48,9 @@ class LoginController extends Controller
             // 添加数据库
             if (DB::table('users')->insert($res)) {
                 session(['user'=> $res['phone']]);
-                show_msg(200, '注册成功');
+                return show_msg(200, '注册成功');
             } else {
-                show_msg(201, '注册失败');                
+                return show_msg(201, '注册失败');                
             }
         } else {
             return view('home.login.register');
@@ -65,30 +64,23 @@ class LoginController extends Controller
     public function forgot(Request $request)
     {
         if ($request->ajax()) {
-            $data = $request->input('post.');
-            dd($data);
+            $data = $request->post();
             // 验证手机号
-            // $status = Db::name('users')->where('phone', $data['phone'])->value('status');
-            // if ($status) {
-            //     if ($status == 1) {
-            //         // 表单后台验证
-            //         $check = $this->validate($data, 'User.pwd');
-            //         if ($check !== true) {
-            //             return json(['code' => 201, 'msg' => $check]);
-            //         }
+            $status = DB::table('users')->where('phone', $data['phone'])->value('status');
 
-            //         // 更新数据库
-            //         if (Db::name('users')->where('phone', $data['phone'])->setField(['password' => get_md5_sha1($data['password'])]) !== false) {
-            //             return ['code' => 200, 'msg' => 'ok'];
-            //         } else {
-            //             return ['code' => 201, 'msg' => '设置失败'];
-            //         }
-            //     } else {
-            //         return ['code' => 201, 'msg' => '当前账户已被禁用'];
-            //     }
-            // } else {
-            //     return ['code' => 201, 'msg' => '当前用户不存在'];
-            // }
+            if ($status == 1) {
+                // 更新数据库
+                if (DB::table('users')->where('phone', $data['phone'])->update(['password' => get_md5_sha1($data['password'])]) !== false) {
+                    return ['code' => 200, 'msg' => 'ok'];
+                } else {
+                    return ['code' => 201, 'msg' => '设置失败'];
+                }
+            } else if ($status == 2) {
+                return ['code' => 201, 'msg' => '当前账户已被禁用'];
+            } else {
+                return ['code' => 201, 'msg' => '当前用户不存在'];
+            }
+            
         }
     }
 

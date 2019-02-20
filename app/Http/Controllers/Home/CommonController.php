@@ -49,19 +49,17 @@ class CommonController extends Controller
     public function checkCode(Request $request)
     {
         if (!$request->input('mobile_code')) {
-            show_msg(201, '参数出错');
+            return show_msg(201, '参数出错');
         } else {
-            // dump(request()->cookie('mobile_code1'));
-            // dump(session('mobile_code'));
             if (session('mobile_code') == "") {
-                show_msg(201, '验证码已过期，请重新发送');
+                return show_msg(201, '验证码已过期，请重新发送');
             }
             if ($request->input('mobile_code') == session('mobile_code')) {
-                // $request->session()->forget('mobile_code');
-                show_msg(200);
+                $request->session()->forget('mobile_code');
+                return show_msg(200);
 
             } else {
-                show_msg(201, '验证失败');                
+                return show_msg(201, '验证失败');                
             }
         }
     }
@@ -134,12 +132,12 @@ class CommonController extends Controller
     {
         if ($request->ajax()) {
             if (DB::table('users')->where('phone', $request->input('phone'))->count()) {
-                show_msg(201, '该手机已注册！');
+                return show_msg(201, '该手机已注册！');
             } else {
-                show_msg(200);
+                return show_msg(200);
             }
         } else {
-            show_msg(202, '非法请求');
+            return show_msg(202, '非法请求');
         }
     }
 }

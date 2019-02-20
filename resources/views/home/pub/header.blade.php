@@ -9,7 +9,7 @@
 
             <div class="nav_box  fr">
                 <div class="logoin_wrap  fr">
-                    @empty($_SESSION['user'])
+                    @empty(session('user'))
                         <!-- 登陆前 -->
                         <div class="logoin_btns">
                             <a href="{{url('login')}}" class="logoin_button">登陆</a>

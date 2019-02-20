@@ -192,6 +192,7 @@
         </div>
 
         <form action="">
+        {{csrf_field()}}
             <ul class="agent_list  ">
                 <li class="agent_item  clearfix">
                     <div class="agent_item_name  fl">
@@ -199,7 +200,7 @@
                         您的姓名:
                     </div>
 
-                    <input type="text" class="fl" name="">
+                    <input type="text" class="fl tips-show-name" name="name">
                 </li>
                 <li class="agent_item  clearfix">
                     <div class="agent_item_name  fl">
@@ -207,19 +208,18 @@
                         您的电话:
                     </div>
 
-                    <input type="text" class="fl" name="">
+                    <input type="text" class="fl tips-show-tel" name="phone">
                 </li>
                 <li class="agent_item  clearfix">
                     <div class="agent_item_name  fl">
-                        <span class="red">*</span>
                         所在区域:
                     </div>
 
                     <!-- 省市区三级联动 -->
                     <div data-toggle="distpicker" class="distpicker  fl">
-                        <select data-province="省份"></select>
-                        <select data-city="市"></select>
-                        <select data-district="区"></select>
+                        <select data-province="省份" name='sheng'></select>
+                        <select data-city="市" name='shi'></select>
+                        <select data-district="区" name='qu'></select>
                     </div>
                 </li>
                 <li class="agent_item  clearfix">
@@ -228,15 +228,14 @@
                         公司名称:
                     </div>
 
-                    <input type="text" class="fl" name="">
+                    <input type="text" class="fl tips-show-company" name="company">
                 </li>
                 <li class="agent_item  clearfix">
                     <div class="agent_item_name  fl">
                         <span class="red"></span>
                         备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注:
                     </div>
-
-                    <textarea name="" id="" cols="30" rows="10" class="fl"></textarea>
+                    <textarea name="messages" id="" cols="30" rows="10" class="fl"></textarea>
                 </li>
 
                 <li class="submit">

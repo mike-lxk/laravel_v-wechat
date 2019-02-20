@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/static/home/css/result.css">
     <link rel="stylesheet" href="/static/home/css/common.css">
     <link rel="stylesheet" href="/static/home/css/solution.css">
+    <link rel="icon" href="/static/home/images/header.ico">
     <title>制造行业解决方案</title>
 </head>
 

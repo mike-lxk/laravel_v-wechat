@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/static/home/css/common.css">
     <link rel="stylesheet" href="/static/home/css/swiper.min.css">
     <link rel="stylesheet" href="/static/home/css/index.css">
+    <link rel="icon" href="/static/home/images/header.ico">
     <title>V信小程序</title>
 </head>
 

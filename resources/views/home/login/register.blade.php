@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/static/home/css/result.css">
     <link rel="stylesheet" href="/static/home/css/jigsaw.css">
     <link rel="stylesheet" href="/static/home/css/user.css">
+    <link rel="icon" href="/static/home/images/header.ico">
     <title>注册</title>
 </head>
 
