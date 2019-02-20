@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50553
 File Encoding         : 65001
 
-Date: 2019-02-16 18:16:17
+Date: 2019-02-20 18:18:16
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -68,25 +68,25 @@ INSERT INTO `v_admin_log` VALUES ('11', 'admin', '超级管理员', '127.0.0.1',
 INSERT INTO `v_admin_log` VALUES ('12', 'admin', '超级管理员', '127.0.0.1', '1542943978');
 
 -- ----------------------------
--- Table structure for v_agencys
+-- Table structure for v_agency
 -- ----------------------------
-DROP TABLE IF EXISTS `v_agencys`;
-CREATE TABLE `v_agencys` (
+DROP TABLE IF EXISTS `v_agency`;
+CREATE TABLE `v_agency` (
   `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
-  `cm_id` int(10) NOT NULL COMMENT '定制者的主键值',
-  `ma_id` smallint(4) NOT NULL COMMENT '移动广告主键值',
-  `com_name` varchar(100) DEFAULT NULL COMMENT '企业名称',
   `name` varchar(30) NOT NULL COMMENT '姓名',
   `phone` bigint(11) NOT NULL COMMENT '手机号',
-  `area` varchar(60) DEFAULT NULL COMMENT '地区',
-  `description` varchar(600) DEFAULT NULL COMMENT '需求描述',
-  `create_time` datetime NOT NULL COMMENT '创建时间',
+  `position` varchar(50) DEFAULT NULL COMMENT '位置',
+  `company` varchar(30) NOT NULL COMMENT '企业名称',
+  `message` varchar(100) NOT NULL COMMENT '备注',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COMMENT='移动广告定制【预约咨询】';
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COMMENT='代理加盟';
 
 -- ----------------------------
--- Records of v_agencys
+-- Records of v_agency
 -- ----------------------------
+INSERT INTO `v_agency` VALUES ('1', 'mike', '18762816879', '山西省 太原市 小店区', '南京公司', '备注信息');
+INSERT INTO `v_agency` VALUES ('2', 'lxk', '18759596969', '江苏省 南京市 玄武区', '南京company', '备注');
+INSERT INTO `v_agency` VALUES ('3', 'ss', '18758496962', '湖南省 长沙市 芙蓉区', '公司名称', '备注');
 
 -- ----------------------------
 -- Table structure for v_course
@@ -230,11 +230,16 @@ CREATE TABLE `v_users` (
   `create_time` datetime NOT NULL COMMENT '创建时间',
   `status` tinyint(1) NOT NULL DEFAULT '1' COMMENT '状态（1：正常； 2：禁用；）',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of v_users
 -- ----------------------------
-INSERT INTO `v_users` VALUES ('1', '18762816879', 'c78b6663d47cfbdb4d65ea51c104044e', '2018-11-05 14:52:20', '1');
+INSERT INTO `v_users` VALUES ('1', '18762816871', 'c78b6663d47cfbdb4d65ea51c104044e', '2018-11-05 14:52:20', '1');
 INSERT INTO `v_users` VALUES ('2', '18762816873', 'c78b6663d47cfbdb4d65ea51c104044e', '2018-11-05 15:08:03', '1');
 INSERT INTO `v_users` VALUES ('3', '18759596969', 'c78b6663d47cfbdb4d65ea51c104044e', '2018-11-05 15:53:49', '1');
+INSERT INTO `v_users` VALUES ('4', '18762816872', 'c78b6663d47cfbdb4d65ea51c104044e', '2019-02-19 07:44:59', '1');
+INSERT INTO `v_users` VALUES ('5', '18762816873', 'c78b6663d47cfbdb4d65ea51c104044e', '2019-02-19 09:50:00', '1');
+INSERT INTO `v_users` VALUES ('6', '18762816875', 'c78b6663d47cfbdb4d65ea51c104044e', '2019-02-19 09:52:16', '1');
+INSERT INTO `v_users` VALUES ('7', '18762816877', 'c78b6663d47cfbdb4d65ea51c104044e', '2019-02-19 09:53:43', '1');
+INSERT INTO `v_users` VALUES ('8', '18762816879', '7402845c089600619714b20413e8e5d0', '2019-02-19 10:00:05', '1');
