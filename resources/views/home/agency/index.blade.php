@@ -13,9 +13,7 @@
 
 <body>
     <!-- 引入头部 -->
-    <include file="pub/header">
     @include('home.pub.header')
-
     <!-- 引入头部 -->
 
     <div class="case_banner  cooperation">

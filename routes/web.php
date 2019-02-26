@@ -32,8 +32,9 @@ Route::namespace('Home')->group(function () {
     Route::get('solution/wechat', 'SolutionController@wechat');
 
     // 代理
-    Route::resource('agency', 'AgencyController',['only'=>['index', 'store']]);
+    Route::resource('agency', 'AgencyController');
 
+    
     // 帮助
     Route::get('help/aboutus', 'HelpController@aboutus');
     Route::resource('help', 'HelpController', ['only' => [
