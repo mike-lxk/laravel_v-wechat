@@ -190,7 +190,7 @@
         </div>
 
         <form action="">
-        {{csrf_field()}}
+            {{csrf_field()}}
             <ul class="agent_list  ">
                 <li class="agent_item  clearfix">
                     <div class="agent_item_name  fl">
@@ -237,26 +237,27 @@
                 </li>
 
                 <li class="submit">
-                    <input type="button"  value="提交"  class="submit_btn">
+                    <input type="button" value="提交" class="submit_btn">
                 </li>
             </ul>
         </form>
-         <!-- 提交后的弹框 -->
-    <div class="submit_box  hide">
+        <!-- 提交后的弹框 -->
+        <div class="submit_box  hide">
             <img src="/static/home/images/ok.png" alt="">
             <h4>已提交</h4>
             <p>我们将尽快与您联系！</p>
         </div>
     </div>
 
-   
+
     <!-- 引入底部 -->
     @include('home.pub.footer')
 
     <!-- 引入底部 -->
 
     <script src="/static/home/js/distpicker.js"></script>
-    
+    <script src="/static/home/js/agency.js"></script>
+
 </body>
 
-</html>
+</html> 
